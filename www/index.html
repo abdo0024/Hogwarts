@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://griffis.edumedia.ca 'unsafe-eval';connect-src https://griffis.edumedia.ca;">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Hogwarts Premier League</title>
+</head>
+
+<body>
+    <div id="scores" class="page active">
+        <header> </header>
+        <ul class="results_list"> </ul>
+    </div>
+    <div id="standings" class="page" data-role="page">
+        <h2>Standings</h2>
+        <table id="scoreData">
+            <thead>
+                <tr>
+                    <th>Team Name</th>
+                    <th>W</th>
+                    <th>L</th>
+                    <th>T</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- load the results here after calculating them -->
+            </tbody>
+        </table>
+        <ul class="standings"> </ul>
+    </div>
+    <!--this is where I had <div id="gameresults" class="page active" data-role="page">
+        <section id="results" class="active">
+             game scores (results) data inserted here 
+        </section>
+    </div> -->
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <section data-role="nav" id="nav">
+        <ul class="tabs">
+            <li><a id="nav_gameresults" href="#scores">score</a></li>
+            <li><a id="nav_standings" href="#standings">Standings</a></li>
+        </ul>
+    </section>
+</body>
+
+</html>
